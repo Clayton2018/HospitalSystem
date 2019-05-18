@@ -15,7 +15,7 @@ public class InPatientRepositoryImpl implements InPatientRepository {
     private static InPatientRepositoryImpl repository = null;
     private Map<Integer, Patient> patients;
 
-    private InPatientRepositoryImpl(){
+    public InPatientRepositoryImpl(){
         patients = new HashMap<>();
     }
 

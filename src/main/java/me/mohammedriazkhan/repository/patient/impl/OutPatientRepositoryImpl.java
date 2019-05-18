@@ -15,7 +15,7 @@ public class OutPatientRepositoryImpl implements OutPatientRepository {
     private static OutPatientRepositoryImpl repository = null;
     private Map<Integer, Patient> patients;
 
-    private OutPatientRepositoryImpl(){
+    public OutPatientRepositoryImpl(){
         patients = new HashMap<>();
     }
 

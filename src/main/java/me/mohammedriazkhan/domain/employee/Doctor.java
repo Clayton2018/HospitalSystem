@@ -3,13 +3,14 @@ package me.mohammedriazkhan.domain.employee;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import me.mohammedriazkhan.domain.patient.Patient;
 
+import javax.persistence.Entity;
 import java.util.List;
 
+@Entity
 public class Doctor extends Employee{
 
-    @JsonProperty("specialisation")
     private String specialisation;
-    private List<Patient> patients;
+    //private List<Patient> patients;
 
     public Doctor(){
 
@@ -17,7 +18,7 @@ public class Doctor extends Employee{
 
     protected Doctor(DoctorBuilder builder) {
         super(builder);
-        this.patients = builder.patients;
+        //this.patients = builder.patients;
         this.specialisation = builder.specialisation;
 
     }
@@ -30,13 +31,13 @@ public class Doctor extends Employee{
         this.specialisation = specialisation;
     }
 
-    public List<Patient> getPatients() {
-        return patients;
-    }
+    //public List<Patient> getPatients() {
+      //  return patients;
+    //}
 
-    public void setPatients(List<Patient> patients) {
-        this.patients = patients;
-    }
+   // public void setPatients(List<Patient> patients) {
+      //  this.patients = patients;
+    //}
 
     public static class DoctorBuilder extends Employee.Builder{
 

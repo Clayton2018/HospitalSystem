@@ -2,12 +2,18 @@ package me.mohammedriazkhan.domain.employee;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+
+@MappedSuperclass
 public abstract class Employee {
 
+    @Id
     private int employeeId;
-    @JsonProperty("fName")
+
     private String firstName;
-    @JsonProperty("lName")
+
     private String lastName;
     private String identityNumber;
     private String jobTitle;

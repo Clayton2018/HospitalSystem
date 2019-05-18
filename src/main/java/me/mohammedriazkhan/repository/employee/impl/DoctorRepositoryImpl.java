@@ -1,3 +1,4 @@
+/*
 package me.mohammedriazkhan.repository.employee.impl;
 
 import me.mohammedriazkhan.domain.employee.Doctor;
@@ -30,9 +31,11 @@ public class DoctorRepositoryImpl implements DoctorRepository {
         return doctorRepository;
     }
 
-   /* public Doctor find(int id) {
+   */
+/* public Doctor find(int id) {
         return doctors.stream().filter(doctor -> doctor.getEmployeeId() == id).findAny().orElse(null);
-    }*/
+    }*//*
+
 
     @Override
     public Doctor create(Doctor doctor) {
@@ -65,3 +68,4 @@ public class DoctorRepositoryImpl implements DoctorRepository {
 
 
 }
+*/

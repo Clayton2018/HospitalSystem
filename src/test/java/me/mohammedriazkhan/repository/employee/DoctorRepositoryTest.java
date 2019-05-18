@@ -1,3 +1,4 @@
+/*
 package me.mohammedriazkhan.repository.employee;
 
 import me.mohammedriazkhan.domain.employee.Doctor;
@@ -77,4 +78,4 @@ public class DoctorRepositoryTest {
         assertNull(docTor);
 
     }
-}
+}*/

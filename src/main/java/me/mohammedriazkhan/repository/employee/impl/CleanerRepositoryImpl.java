@@ -9,13 +9,13 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-@Repository("CleanerInMemory")
+@Repository
 public class CleanerRepositoryImpl implements CleanerRepository{
 
     private static CleanerRepositoryImpl cleanerRepository = null;
     private Map<Integer, Cleaner> cleaners;
 
-    private CleanerRepositoryImpl(){
+    public CleanerRepositoryImpl(){
         cleaners = new HashMap<>();
     }
 
